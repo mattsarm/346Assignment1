@@ -27,4 +27,12 @@ void save(CPU controller) {
 	Reg2 = controller.Reg2;
 };
 
+public String toString() {
+	String io = "";
+	for(int i = 0; i < IORequests.length; i++) {
+		io += "[" + IORequests[i][0] + "," + IORequests[i][1] + "],";
+	}
+	return "Program " + PNum + ", Instruction " + CurrentInstruction + "/" + PCounter + ", State \"" + state + "\", IO Requests: " + io  + " Registers 1/2 " + Reg1 + " " + Reg2;
+}
+
 }

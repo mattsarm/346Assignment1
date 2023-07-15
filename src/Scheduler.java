@@ -61,9 +61,24 @@ public class Scheduler {
 		return;
 	}
 	
+	boolean isEmpty() {
+		if(ReadyQueue.isEmpty() && control.currentProcess == null) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public String toString() {
+		return "Ready Queue " + ReadyQueue + "\n CPU: " + control + "\nIO 1: " + io1 + "\nIO 2: " + io2;
+	}
+	
 	void runScheduler() {
 		int cpuAction;
 		while(true) {
+			if(this.isEmpty() && io1.isEmpty() && io2.isEmpty()) {
+				break;
+			}
 			if(InterruptTimer == 2) {
 				interrupt();
 			}

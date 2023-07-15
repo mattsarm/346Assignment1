@@ -12,6 +12,9 @@ public CPU() {
 	Reg2 = rand.nextInt(1000);
 }
 
+public String toString() {
+	return "Registers: " + Reg1 + " " + Reg2 + "\nProcess On CPU: " + currentProcess;
+}
 
 int runCPU() {
 	Reg1 = rand.nextInt(1000);

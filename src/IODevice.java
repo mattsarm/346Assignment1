@@ -21,6 +21,9 @@ public class IODevice {
 		}
 	}
 	
+	public String toString() {
+		return "Process On IO " + currentIO + "\nWaiting Queue: " + WaitingQueue;
+	}
 	
 	void runIO(Scheduler sched) {
 		if(IOTimer != 0) {
