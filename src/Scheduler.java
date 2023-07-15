@@ -2,13 +2,23 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Scheduler {
-	Queue<PCB> ReadyQueue = new LinkedList<PCB>();
+	Queue<PCB> ReadyQueue;
 	int InterruptTimer;
 	CPU control;
 	IODevice io1;
 	IODevice io2;
 	
 	String[] States = {"new","ready","waiting","running","terminated"};
+	
+	
+	public Scheduler() {
+		ReadyQueue = new LinkedList<PCB>();
+		InterruptTimer = 0;
+		control = new CPU();
+		io1 = new IODevice();
+		io2 = new IODevice();
+	}
+	
 	
 	void admit(PCB Process) {
 		ReadyQueue.add(Process);
@@ -65,6 +75,8 @@ public class Scheduler {
 			} else if(cpuAction == 0) {
 				InterruptTimer++;
 			}
+			io1.runIO(this);
+			io2.runIO(this);
 		}
 	}
 	

@@ -4,7 +4,23 @@ import java.util.Queue;
 public class IODevice {
 	int IOTimer;
 	PCB currentIO;
-	Queue<PCB> WaitingQueue = new LinkedList<PCB>();
+	Queue<PCB> WaitingQueue;
+	
+	
+	public IODevice() {
+		WaitingQueue = new LinkedList<PCB>();
+		IOTimer = 0;
+		currentIO = null;
+	}
+	
+	boolean isEmpty() {
+		if(WaitingQueue.isEmpty() && currentIO == null) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
 	
 	void runIO(Scheduler sched) {
 		if(IOTimer != 0) {

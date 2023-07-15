@@ -1,10 +1,17 @@
 import java.util.Random;
 
 public class CPU {
+Random rand = new Random();
 int Reg1;
 int Reg2;
-Random rand = new Random();
 PCB currentProcess;
+
+public CPU() {
+	currentProcess = null;
+	Reg1 = rand.nextInt(1000);
+	Reg2 = rand.nextInt(1000);
+}
+
 
 int runCPU() {
 	Reg1 = rand.nextInt(1000);
