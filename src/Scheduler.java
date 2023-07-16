@@ -80,18 +80,29 @@ public class Scheduler {
 				break;
 			}
 			if(InterruptTimer == 2) {
+				System.out.println("-------INTERRUPTING-----");
 				interrupt();
+			}
+			if(!(ReadyQueue.isEmpty()) && control.currentProcess == null) {
+				System.out.println("-------DISPATCHING-----");
+				dispatch();
 			}
 			cpuAction = control.runCPU();
 			if(cpuAction == 1) {
+				System.out.println("-------TERMINATING-----");
 				terminate();
 			} else if(cpuAction == 2) {
+				System.out.println("-------MOVING TO IO-----");
 				ioEvent();
 			} else if(cpuAction == 0) {
-				InterruptTimer++;
+				if(control.currentProcess != null) {
+					InterruptTimer++;
+				}
 			}
 			io1.runIO(this);
 			io2.runIO(this);
+			
+			System.out.println(this);
 		}
 	}
 	
