@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -73,7 +75,8 @@ public class Scheduler {
 		return "Ready Queue " + ReadyQueue + "\n CPU: " + control + "\nIO 1: " + io1 + "\nIO 2: " + io2;
 	}
 	
-	void runScheduler() {
+	void runScheduler() throws IOException {
+		FileWriter wr = new FileWriter("output.txt");
 		int cpuAction;
 		int counter = 0;
 		while(true) {
@@ -81,18 +84,22 @@ public class Scheduler {
 				break;
 			}
 			if(InterruptTimer == 2) {
+				wr.write("-------INTERRUPTING-----\n");
 				System.out.println("-------INTERRUPTING-----");
 				interrupt();
 			}
 			if(!(ReadyQueue.isEmpty()) && control.currentProcess == null) {
+				wr.write("-------DISPATCHING-----\n");
 				System.out.println("-------DISPATCHING-----");
 				dispatch();
 			}
 			cpuAction = control.runCPU();
 			if(cpuAction == 1) {
+				wr.write("-------TERMINATING-----\n");
 				System.out.println("-------TERMINATING-----");
 				terminate();
 			} else if(cpuAction == 2) {
+				wr.write("-------MOVING TO IO-----\n");
 				System.out.println("-------MOVING TO IO-----");
 				ioEvent();
 			} else if(cpuAction == 0) {
@@ -102,10 +109,14 @@ public class Scheduler {
 			}
 			io1.runIO(this);
 			io2.runIO(this);
+			wr.write("*******TIME STEP " + counter + "***********\n");
 			System.out.println("*******TIME STEP " + counter + "***********");
+			wr.write(this.toString() + "\n");
 			System.out.println(this);
 			counter++;
+			wr.flush();
 		}
+		wr.close();
 	}
 	
 }

@@ -30,6 +30,7 @@ public class IODevice {
 			if(IOTimer == 5) {
 				sched.ReadyQueue.add(currentIO);
 				currentIO.state = sched.States[1];
+				currentIO.CurrentInstruction++;
 				currentIO = null;
 				IOTimer = 0;
 			} else {

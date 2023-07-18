@@ -26,7 +26,7 @@ int runCPU() {
 		}
 		if(currentProcess.currentIORequests < currentProcess.IORequests.length) {
 			if(currentProcess.CurrentInstruction == currentProcess.IORequests[currentProcess.currentIORequests][0]) {
-				currentProcess.CurrentInstruction++;
+				//currentProcess.CurrentInstruction++;
 				return 2;
 			}
 		}
