@@ -75,6 +75,7 @@ public class Scheduler {
 	
 	void runScheduler() {
 		int cpuAction;
+		int counter = 0;
 		while(true) {
 			if(this.isEmpty() && io1.isEmpty() && io2.isEmpty()) {
 				break;
@@ -101,8 +102,9 @@ public class Scheduler {
 			}
 			io1.runIO(this);
 			io2.runIO(this);
-			
+			System.out.println("*******TIME STEP " + counter + "***********");
 			System.out.println(this);
+			counter++;
 		}
 	}
 	

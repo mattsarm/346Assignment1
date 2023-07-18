@@ -56,34 +56,22 @@ static PCB[] fromFile(String filename) throws IOException {
         while ((line = lineReader.readLine()) != null) {
             String[] row = line.split(",(?![^\\[]*\\])");
 
-            //System.out.println(Arrays.toString(row));
-
             int processID = Integer.parseInt(row[0].trim());
             int nbrInstructions = Integer.parseInt(row[1].trim());
 
             if (row[2].length() > 3) {
                 String[] ioReqTime = row[2].substring(2, row[2].length() - 1).split(",");
-               // System.out.println(Arrays.toString(ioReqTime));
-                String[] ioDevReq = row[3].substring(2, row[3].length() - 1).split(",");
-                //System.out.println(Arrays.toString(ioDevReq));
 
-//                for (int i = 0; i < ioReqTime.length; i++) {
-//                    System.out.println(ioReqTime[i]);
-//                    System.out.println(ioDevReq[i]);
-//                }
+                String[] ioDevReq = row[3].substring(2, row[3].length() - 1).split(",");
                 
                 ioRequests = new int[ioReqTime.length][2];
                 for (int i = 0; i < ioReqTime.length; i++) {
                     ioRequests[i][0] = Integer.parseInt(ioReqTime[i].trim());
-                    //System.out.print(ioRequests[i][0] + " ");
                     ioRequests[i][1] = Integer.parseInt(ioDevReq[i].trim());
-                    //System.out.println(ioRequests[i][1]);
                 }
-               // System.out.println(Arrays.deepToString(ioRequests));
 
             }else{
                 ioRequests = emptyarray;
-                System.out.println(Arrays.deepToString(ioRequests));
             }
 
             data[lineCounter2] = new PCB(processID, nbrInstructions, ioRequests);

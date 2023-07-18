@@ -16,10 +16,9 @@ public class Driver {
 //		int[] io3 = {1,2,2,2,2,2,1};
 //		PCB test3 = new PCB(3, 150, req3, io3);
 		Scheduler s = new Scheduler();
+		s.admit(input[0]);
 		s.admit(input[1]);
-		//s.admit(input[2]);
-//		s.admit(test2);
-//		s.admit(test3);
+		s.admit(input[2]);
 		s.runScheduler();
 	}
 
