@@ -4,9 +4,7 @@ public class Driver {
 
 	public static void main(String[] args) throws IOException {
 		PCB[] input = PCB.fromFile("processes.txt");
-//		for(int i = 0; i < input.length; i++) {
-//			System.out.println(input[i]);
-//		}
+		
 	
 //		int[] req = {5,6,17,20};
 //		int[] io = {1,1,1,2};
@@ -18,8 +16,8 @@ public class Driver {
 //		int[] io3 = {1,2,2,2,2,2,1};
 //		PCB test3 = new PCB(3, 150, req3, io3);
 		Scheduler s = new Scheduler();
-		s.admit(input[0]);
-//		s.admit(test1);
+		s.admit(input[1]);
+		//s.admit(input[2]);
 //		s.admit(test2);
 //		s.admit(test3);
 		s.runScheduler();

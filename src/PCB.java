@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-//import java.util.Arrays;
+import java.util.Arrays;
 
 public class PCB {
 int PNum;
@@ -40,7 +40,7 @@ static PCB[] fromFile(String filename) throws IOException {
 
         BufferedReader lineReaderCounter = new BufferedReader(new FileReader(filename));
         int lineCounter1 = 0;
-
+        int[][] emptyarray = {};
         while ((lineReaderCounter.readLine()) != null) {
             lineCounter1++;
         }
@@ -52,11 +52,11 @@ static PCB[] fromFile(String filename) throws IOException {
         int lineCounter2 = 0;
 
         int[][] ioRequests;
-
+        
         while ((line = lineReader.readLine()) != null) {
             String[] row = line.split(",(?![^\\[]*\\])");
 
-           // System.out.println(Arrays.toString(row));
+            //System.out.println(Arrays.toString(row));
 
             int processID = Integer.parseInt(row[0].trim());
             int nbrInstructions = Integer.parseInt(row[1].trim());
@@ -75,15 +75,15 @@ static PCB[] fromFile(String filename) throws IOException {
                 ioRequests = new int[ioReqTime.length][2];
                 for (int i = 0; i < ioReqTime.length; i++) {
                     ioRequests[i][0] = Integer.parseInt(ioReqTime[i].trim());
-                    //System.out.println(ioRequests[i][0]);
+                    //System.out.print(ioRequests[i][0] + " ");
                     ioRequests[i][1] = Integer.parseInt(ioDevReq[i].trim());
                     //System.out.println(ioRequests[i][1]);
                 }
-                //System.out.println(Arrays.deepToString(ioRequests));
+               // System.out.println(Arrays.deepToString(ioRequests));
 
             }else{
-                ioRequests = new int[1][2];
-                //System.out.println(Arrays.deepToString(ioRequests));
+                ioRequests = emptyarray;
+                System.out.println(Arrays.deepToString(ioRequests));
             }
 
             data[lineCounter2] = new PCB(processID, nbrInstructions, ioRequests);
