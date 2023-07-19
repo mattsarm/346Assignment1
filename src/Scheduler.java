@@ -83,6 +83,8 @@ public class Scheduler {
 			if(this.isEmpty() && io1.isEmpty() && io2.isEmpty()) {
 				break;
 			}
+			wr.write("*******TIME STEP " + counter + "***********\n");
+			System.out.println("*******TIME STEP " + counter + "***********");
 			if(InterruptTimer == 2) {
 				wr.write("-------INTERRUPTING-----\n");
 				System.out.println("-------INTERRUPTING-----");
@@ -109,8 +111,6 @@ public class Scheduler {
 			}
 			io1.runIO(this);
 			io2.runIO(this);
-			wr.write("*******TIME STEP " + counter + "***********\n");
-			System.out.println("*******TIME STEP " + counter + "***********");
 			wr.write(this.toString() + "\n");
 			System.out.println(this);
 			counter++;
