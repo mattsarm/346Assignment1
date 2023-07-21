@@ -1,17 +1,18 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
+//PCB CLass
 public class PCB {
-int PNum;
-int PCounter;
-int CurrentInstruction;
-int Reg1;
-int Reg2;
-String state;
-int currentIORequests;
-int[][] IORequests;
+int PNum; //Process Number
+int PCounter; //Max Instruction
+int CurrentInstruction; //Current instruction
+int Reg1; //Register 1 data
+int Reg2; //Register 2 data
+String state; //Current Process state
+int currentIORequests; //Index of first dimension of IO Request Array
+int[][] IORequests; //2D array of [IO Request Instruction Number, IO Device Number]
+
 
 public PCB(int num, int counter, int[] instructIO, int[] device) {
 	PNum = num;
@@ -26,6 +27,7 @@ public PCB(int num, int counter, int[] instructIO, int[] device) {
 	}
 }
 
+//PCB Constructor, takes process number, max instruction, and IO 2D array
 public PCB(int num, int counter, int[][] instructIO) {
 	PNum = num;
 	PCounter = counter;
@@ -35,7 +37,7 @@ public PCB(int num, int counter, int[][] instructIO) {
 	IORequests = instructIO;
 }
 
-
+//PCB static method to read .txt and output an array of valid PCB's
 static PCB[] fromFile(String filename) throws IOException {
 
         BufferedReader lineReaderCounter = new BufferedReader(new FileReader(filename));
@@ -84,11 +86,13 @@ static PCB[] fromFile(String filename) throws IOException {
 
     }
 
+//Function to save CPU register values on PCB
 void save(CPU controller) {
 	Reg1 = controller.Reg1;
 	Reg2 = controller.Reg2;
 };
 
+//toString method to print PCB
 public String toString() {
 	String io = "";
 	for(int i = 0; i < IORequests.length; i++) {

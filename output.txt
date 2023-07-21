@@ -1,16 +1,16 @@
 *******TIME STEP 0***********
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 646 465
-Process On CPU: Program 1, Instruction 1/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 646 465
+Ready Queue [Program 2, Instruction 0/67, State "new", IO Requests:  Registers 1/2 0 0, Program 3, Instruction 0/150, State "new", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 0 0]
+ CPU: Registers: 249 364
+Process On CPU: Program 1, Instruction 1/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 249 364
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 1***********
-Ready Queue []
- CPU: Registers: 788 767
-Process On CPU: Program 1, Instruction 2/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 788 767
+Ready Queue [Program 2, Instruction 0/67, State "new", IO Requests:  Registers 1/2 0 0, Program 3, Instruction 0/150, State "new", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 0 0]
+ CPU: Registers: 672 91
+Process On CPU: Program 1, Instruction 2/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 672 91
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -18,17 +18,17 @@ Waiting Queue: []
 *******TIME STEP 2***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 691 479
-Process On CPU: Program 1, Instruction 3/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 691 479
+Ready Queue [Program 3, Instruction 0/150, State "new", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 0 0, Program 1, Instruction 2/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 672 91]
+ CPU: Registers: 163 683
+Process On CPU: Program 2, Instruction 1/67, State "running", IO Requests:  Registers 1/2 163 683
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 3***********
-Ready Queue []
- CPU: Registers: 174 216
-Process On CPU: Program 1, Instruction 4/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 174 216
+Ready Queue [Program 3, Instruction 0/150, State "new", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 0 0, Program 1, Instruction 2/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 672 91]
+ CPU: Registers: 779 229
+Process On CPU: Program 2, Instruction 2/67, State "running", IO Requests:  Registers 1/2 779 229
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -36,265 +36,279 @@ Waiting Queue: []
 *******TIME STEP 4***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 154 736
-Process On CPU: Program 1, Instruction 5/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 154 736
+Ready Queue [Program 1, Instruction 2/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 672 91, Program 2, Instruction 2/67, State "ready", IO Requests:  Registers 1/2 779 229]
+ CPU: Registers: 862 328
+Process On CPU: Program 3, Instruction 1/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 862 328
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 5***********
--------MOVING TO IO-----
-Ready Queue []
- CPU: Registers: 701 166
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 701 166
+Ready Queue [Program 1, Instruction 2/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 672 91, Program 2, Instruction 2/67, State "ready", IO Requests:  Registers 1/2 779 229]
+ CPU: Registers: 993 127
+Process On CPU: Program 3, Instruction 2/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 993 127
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 6***********
-Ready Queue []
- CPU: Registers: 701 166
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 701 166
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 2/67, State "ready", IO Requests:  Registers 1/2 779 229, Program 3, Instruction 2/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 993 127]
+ CPU: Registers: 326 785
+Process On CPU: Program 1, Instruction 3/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 326 785
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 7***********
-Ready Queue []
- CPU: Registers: 701 166
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 701 166
+Ready Queue [Program 2, Instruction 2/67, State "ready", IO Requests:  Registers 1/2 779 229, Program 3, Instruction 2/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 993 127]
+ CPU: Registers: 511 357
+Process On CPU: Program 1, Instruction 4/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 511 357
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 8***********
-Ready Queue []
- CPU: Registers: 701 166
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 701 166
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 2/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 993 127, Program 1, Instruction 4/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 511 357]
+ CPU: Registers: 135 462
+Process On CPU: Program 2, Instruction 3/67, State "running", IO Requests:  Registers 1/2 135 462
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 9***********
-Ready Queue []
- CPU: Registers: 701 166
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 701 166
+Ready Queue [Program 3, Instruction 2/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 993 127, Program 1, Instruction 4/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 511 357]
+ CPU: Registers: 797 100
+Process On CPU: Program 2, Instruction 4/67, State "running", IO Requests:  Registers 1/2 797 100
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 10***********
-Ready Queue [Program 1, Instruction 6/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 701 166]
- CPU: Registers: 701 166
-Process On CPU: null
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 4/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 511 357, Program 2, Instruction 4/67, State "ready", IO Requests:  Registers 1/2 797 100]
+ CPU: Registers: 918 320
+Process On CPU: Program 3, Instruction 3/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 918 320
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 11***********
--------DISPATCHING-----
--------MOVING TO IO-----
-Ready Queue []
- CPU: Registers: 943 941
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 943 941
+Ready Queue [Program 1, Instruction 4/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 511 357, Program 2, Instruction 4/67, State "ready", IO Requests:  Registers 1/2 797 100]
+ CPU: Registers: 625 204
+Process On CPU: Program 3, Instruction 4/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 625 204
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 12***********
-Ready Queue []
- CPU: Registers: 943 941
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 943 941
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 4/67, State "ready", IO Requests:  Registers 1/2 797 100, Program 3, Instruction 4/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 625 204]
+ CPU: Registers: 114 60
+Process On CPU: Program 1, Instruction 5/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 114 60
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 13***********
-Ready Queue []
- CPU: Registers: 943 941
+-------MOVING TO IO-----
+Ready Queue [Program 2, Instruction 4/67, State "ready", IO Requests:  Registers 1/2 797 100, Program 3, Instruction 4/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 625 204]
+ CPU: Registers: 378 300
 Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 943 941
+IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 14***********
-Ready Queue []
- CPU: Registers: 943 941
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 943 941
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 4/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 625 204]
+ CPU: Registers: 305 880
+Process On CPU: Program 2, Instruction 5/67, State "running", IO Requests:  Registers 1/2 305 880
+IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 15***********
-Ready Queue []
- CPU: Registers: 943 941
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 943 941
+Ready Queue [Program 3, Instruction 4/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 625 204]
+ CPU: Registers: 23 273
+Process On CPU: Program 2, Instruction 6/67, State "running", IO Requests:  Registers 1/2 23 273
+IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 16***********
-Ready Queue [Program 1, Instruction 7/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 943 941]
- CPU: Registers: 943 941
-Process On CPU: null
-IO 1: Process On IO null
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 6/67, State "ready", IO Requests:  Registers 1/2 23 273]
+ CPU: Registers: 840 273
+Process On CPU: Program 3, Instruction 5/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 840 273
+IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 17***********
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 980 396
-Process On CPU: Program 1, Instruction 8/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 980 396
-IO 1: Process On IO null
+Ready Queue [Program 2, Instruction 6/67, State "ready", IO Requests:  Registers 1/2 23 273]
+ CPU: Registers: 981 194
+Process On CPU: Program 3, Instruction 6/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 981 194
+IO 1: Process On IO Program 1, Instruction 5/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 18***********
-Ready Queue []
- CPU: Registers: 828 705
-Process On CPU: Program 1, Instruction 9/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 828 705
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 6/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 981 194, Program 1, Instruction 6/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300]
+ CPU: Registers: 91 862
+Process On CPU: Program 2, Instruction 7/67, State "running", IO Requests:  Registers 1/2 91 862
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 19***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 990 607
-Process On CPU: Program 1, Instruction 10/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 990 607
+Ready Queue [Program 3, Instruction 6/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 981 194, Program 1, Instruction 6/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300]
+ CPU: Registers: 871 339
+Process On CPU: Program 2, Instruction 8/67, State "running", IO Requests:  Registers 1/2 871 339
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 20***********
-Ready Queue []
- CPU: Registers: 506 403
-Process On CPU: Program 1, Instruction 11/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 506 403
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 6/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300, Program 2, Instruction 8/67, State "ready", IO Requests:  Registers 1/2 871 339]
+ CPU: Registers: 26 101
+Process On CPU: Program 3, Instruction 7/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 26 101
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 21***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 316 666
-Process On CPU: Program 1, Instruction 12/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 316 666
+Ready Queue [Program 1, Instruction 6/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 378 300, Program 2, Instruction 8/67, State "ready", IO Requests:  Registers 1/2 871 339]
+ CPU: Registers: 456 700
+Process On CPU: Program 3, Instruction 8/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 456 700
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 22***********
-Ready Queue []
- CPU: Registers: 414 810
-Process On CPU: Program 1, Instruction 13/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 414 810
-IO 1: Process On IO null
+-------INTERRUPTING-----
+-------DISPATCHING-----
+-------MOVING TO IO-----
+Ready Queue [Program 2, Instruction 8/67, State "ready", IO Requests:  Registers 1/2 871 339, Program 3, Instruction 8/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 456 700]
+ CPU: Registers: 948 120
+Process On CPU: null
+IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 23***********
--------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 90 50
-Process On CPU: Program 1, Instruction 14/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 90 50
-IO 1: Process On IO null
+Ready Queue [Program 3, Instruction 8/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 456 700]
+ CPU: Registers: 772 606
+Process On CPU: Program 2, Instruction 9/67, State "running", IO Requests:  Registers 1/2 772 606
+IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 24***********
-Ready Queue []
- CPU: Registers: 570 829
-Process On CPU: Program 1, Instruction 15/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 570 829
-IO 1: Process On IO null
+Ready Queue [Program 3, Instruction 8/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 456 700]
+ CPU: Registers: 229 988
+Process On CPU: Program 2, Instruction 10/67, State "running", IO Requests:  Registers 1/2 229 988
+IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 25***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 207 802
-Process On CPU: Program 1, Instruction 16/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 207 802
-IO 1: Process On IO null
+Ready Queue [Program 2, Instruction 10/67, State "ready", IO Requests:  Registers 1/2 229 988]
+ CPU: Registers: 276 425
+Process On CPU: Program 3, Instruction 9/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 276 425
+IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 26***********
-Ready Queue []
- CPU: Registers: 868 644
-Process On CPU: Program 1, Instruction 17/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 868 644
-IO 1: Process On IO null
+Ready Queue [Program 2, Instruction 10/67, State "ready", IO Requests:  Registers 1/2 229 988]
+ CPU: Registers: 235 606
+Process On CPU: Program 3, Instruction 10/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 235 606
+IO 1: Process On IO Program 1, Instruction 6/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 27***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
--------MOVING TO IO-----
-Ready Queue []
- CPU: Registers: 507 60
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 507 60
+Ready Queue [Program 3, Instruction 10/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 235 606, Program 1, Instruction 7/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120]
+ CPU: Registers: 928 485
+Process On CPU: Program 2, Instruction 11/67, State "running", IO Requests:  Registers 1/2 928 485
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 28***********
-Ready Queue []
- CPU: Registers: 507 60
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 507 60
+Ready Queue [Program 3, Instruction 10/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 235 606, Program 1, Instruction 7/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120]
+ CPU: Registers: 167 705
+Process On CPU: Program 2, Instruction 12/67, State "running", IO Requests:  Registers 1/2 167 705
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 29***********
-Ready Queue []
- CPU: Registers: 507 60
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 507 60
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 7/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120, Program 2, Instruction 12/67, State "ready", IO Requests:  Registers 1/2 167 705]
+ CPU: Registers: 263 923
+Process On CPU: Program 3, Instruction 11/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 263 923
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 30***********
-Ready Queue []
- CPU: Registers: 507 60
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 507 60
+Ready Queue [Program 1, Instruction 7/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 948 120, Program 2, Instruction 12/67, State "ready", IO Requests:  Registers 1/2 167 705]
+ CPU: Registers: 462 688
+Process On CPU: Program 3, Instruction 12/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 688
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 31***********
-Ready Queue []
- CPU: Registers: 507 60
-Process On CPU: null
-IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 507 60
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 12/67, State "ready", IO Requests:  Registers 1/2 167 705, Program 3, Instruction 12/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 688]
+ CPU: Registers: 171 150
+Process On CPU: Program 1, Instruction 8/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 171 150
+IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 32***********
-Ready Queue [Program 1, Instruction 18/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 507 60]
- CPU: Registers: 507 60
-Process On CPU: null
+Ready Queue [Program 2, Instruction 12/67, State "ready", IO Requests:  Registers 1/2 167 705, Program 3, Instruction 12/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 688]
+ CPU: Registers: 423 60
+Process On CPU: Program 1, Instruction 9/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 423 60
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 33***********
+-------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 116 582
-Process On CPU: Program 1, Instruction 19/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 116 582
+Ready Queue [Program 3, Instruction 12/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 688, Program 1, Instruction 9/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 423 60]
+ CPU: Registers: 703 212
+Process On CPU: Program 2, Instruction 13/67, State "running", IO Requests:  Registers 1/2 703 212
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 34***********
-Ready Queue []
- CPU: Registers: 83 205
-Process On CPU: Program 1, Instruction 20/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 83 205
+Ready Queue [Program 3, Instruction 12/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 688, Program 1, Instruction 9/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 423 60]
+ CPU: Registers: 599 467
+Process On CPU: Program 2, Instruction 14/67, State "running", IO Requests:  Registers 1/2 599 467
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -302,301 +316,307 @@ Waiting Queue: []
 *******TIME STEP 35***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
--------MOVING TO IO-----
-Ready Queue []
- CPU: Registers: 935 848
-Process On CPU: null
+Ready Queue [Program 1, Instruction 9/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 423 60, Program 2, Instruction 14/67, State "ready", IO Requests:  Registers 1/2 599 467]
+ CPU: Registers: 994 587
+Process On CPU: Program 3, Instruction 13/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 994 587
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 935 848
+IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 36***********
-Ready Queue []
- CPU: Registers: 935 848
-Process On CPU: null
+Ready Queue [Program 1, Instruction 9/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 423 60, Program 2, Instruction 14/67, State "ready", IO Requests:  Registers 1/2 599 467]
+ CPU: Registers: 368 575
+Process On CPU: Program 3, Instruction 14/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 368 575
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 935 848
+IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 37***********
-Ready Queue []
- CPU: Registers: 935 848
-Process On CPU: null
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 14/67, State "ready", IO Requests:  Registers 1/2 599 467, Program 3, Instruction 14/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 368 575]
+ CPU: Registers: 845 138
+Process On CPU: Program 1, Instruction 10/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 845 138
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 935 848
+IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 38***********
-Ready Queue []
- CPU: Registers: 935 848
-Process On CPU: null
+Ready Queue [Program 2, Instruction 14/67, State "ready", IO Requests:  Registers 1/2 599 467, Program 3, Instruction 14/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 368 575]
+ CPU: Registers: 496 630
+Process On CPU: Program 1, Instruction 11/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 496 630
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 935 848
+IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 39***********
-Ready Queue []
- CPU: Registers: 935 848
-Process On CPU: null
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 14/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 368 575, Program 1, Instruction 11/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 496 630]
+ CPU: Registers: 864 845
+Process On CPU: Program 2, Instruction 15/67, State "running", IO Requests:  Registers 1/2 864 845
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 935 848
+IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 40***********
-Ready Queue [Program 1, Instruction 21/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 935 848]
- CPU: Registers: 935 848
-Process On CPU: null
+Ready Queue [Program 3, Instruction 14/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 368 575, Program 1, Instruction 11/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 496 630]
+ CPU: Registers: 957 602
+Process On CPU: Program 2, Instruction 16/67, State "running", IO Requests:  Registers 1/2 957 602
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 41***********
+-------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 751 980
-Process On CPU: Program 1, Instruction 22/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 751 980
-IO 1: Process On IO null
+-------MOVING TO IO-----
+Ready Queue [Program 1, Instruction 11/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 496 630, Program 2, Instruction 16/67, State "ready", IO Requests:  Registers 1/2 957 602]
+ CPU: Registers: 371 140
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 14/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 42***********
-Ready Queue []
- CPU: Registers: 329 374
-Process On CPU: Program 1, Instruction 23/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 329 374
-IO 1: Process On IO null
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 16/67, State "ready", IO Requests:  Registers 1/2 957 602]
+ CPU: Registers: 599 407
+Process On CPU: Program 1, Instruction 12/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 599 407
+IO 1: Process On IO Program 3, Instruction 14/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 43***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 349 695
-Process On CPU: Program 1, Instruction 24/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 349 695
-IO 1: Process On IO null
+Ready Queue [Program 2, Instruction 16/67, State "ready", IO Requests:  Registers 1/2 957 602]
+ CPU: Registers: 168 137
+Process On CPU: Program 1, Instruction 13/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 168 137
+IO 1: Process On IO Program 3, Instruction 14/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 44***********
-Ready Queue []
- CPU: Registers: 79 609
-Process On CPU: Program 1, Instruction 25/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 79 609
-IO 1: Process On IO null
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 13/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 168 137]
+ CPU: Registers: 910 612
+Process On CPU: Program 2, Instruction 17/67, State "running", IO Requests:  Registers 1/2 910 612
+IO 1: Process On IO Program 3, Instruction 14/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 45***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 471 209
-Process On CPU: Program 1, Instruction 26/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 471 209
-IO 1: Process On IO null
+Ready Queue [Program 1, Instruction 13/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 168 137]
+ CPU: Registers: 526 996
+Process On CPU: Program 2, Instruction 18/67, State "running", IO Requests:  Registers 1/2 526 996
+IO 1: Process On IO Program 3, Instruction 14/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 46***********
-Ready Queue []
- CPU: Registers: 274 917
-Process On CPU: Program 1, Instruction 27/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 274 917
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 18/67, State "ready", IO Requests:  Registers 1/2 526 996, Program 3, Instruction 15/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140]
+ CPU: Registers: 426 960
+Process On CPU: Program 1, Instruction 14/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 426 960
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 47***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 447 620
-Process On CPU: Program 1, Instruction 28/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 447 620
+Ready Queue [Program 2, Instruction 18/67, State "ready", IO Requests:  Registers 1/2 526 996, Program 3, Instruction 15/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140]
+ CPU: Registers: 463 484
+Process On CPU: Program 1, Instruction 15/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 463 484
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 48***********
-Ready Queue []
- CPU: Registers: 248 182
-Process On CPU: Program 1, Instruction 29/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 248 182
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 15/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140, Program 1, Instruction 15/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 463 484]
+ CPU: Registers: 554 739
+Process On CPU: Program 2, Instruction 19/67, State "running", IO Requests:  Registers 1/2 554 739
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 49***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 722 71
-Process On CPU: Program 1, Instruction 30/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 722 71
+Ready Queue [Program 3, Instruction 15/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 371 140, Program 1, Instruction 15/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 463 484]
+ CPU: Registers: 835 612
+Process On CPU: Program 2, Instruction 20/67, State "running", IO Requests:  Registers 1/2 835 612
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 50***********
-Ready Queue []
- CPU: Registers: 228 710
-Process On CPU: Program 1, Instruction 31/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 228 710
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 15/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 463 484, Program 2, Instruction 20/67, State "ready", IO Requests:  Registers 1/2 835 612]
+ CPU: Registers: 492 14
+Process On CPU: Program 3, Instruction 16/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 492 14
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 51***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 346 292
-Process On CPU: Program 1, Instruction 32/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 346 292
+Ready Queue [Program 1, Instruction 15/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 463 484, Program 2, Instruction 20/67, State "ready", IO Requests:  Registers 1/2 835 612]
+ CPU: Registers: 790 272
+Process On CPU: Program 3, Instruction 17/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 790 272
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 52***********
-Ready Queue []
- CPU: Registers: 958 638
-Process On CPU: Program 1, Instruction 33/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 958 638
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 20/67, State "ready", IO Requests:  Registers 1/2 835 612, Program 3, Instruction 17/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 790 272]
+ CPU: Registers: 883 927
+Process On CPU: Program 1, Instruction 16/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 883 927
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 53***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 118 41
-Process On CPU: Program 1, Instruction 34/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 118 41
+Ready Queue [Program 2, Instruction 20/67, State "ready", IO Requests:  Registers 1/2 835 612, Program 3, Instruction 17/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 790 272]
+ CPU: Registers: 205 859
+Process On CPU: Program 1, Instruction 17/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 205 859
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 54***********
-Ready Queue []
- CPU: Registers: 509 271
-Process On CPU: Program 1, Instruction 35/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 509 271
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 17/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 790 272, Program 1, Instruction 17/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 205 859]
+ CPU: Registers: 566 509
+Process On CPU: Program 2, Instruction 21/67, State "running", IO Requests:  Registers 1/2 566 509
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 55***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 220 440
-Process On CPU: Program 1, Instruction 36/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 220 440
+Ready Queue [Program 3, Instruction 17/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 790 272, Program 1, Instruction 17/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 205 859]
+ CPU: Registers: 54 479
+Process On CPU: Program 2, Instruction 22/67, State "running", IO Requests:  Registers 1/2 54 479
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 56***********
-Ready Queue []
- CPU: Registers: 264 555
-Process On CPU: Program 1, Instruction 37/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 264 555
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 17/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 205 859, Program 2, Instruction 22/67, State "ready", IO Requests:  Registers 1/2 54 479]
+ CPU: Registers: 668 469
+Process On CPU: Program 3, Instruction 18/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 668 469
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 57***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 911 325
-Process On CPU: Program 1, Instruction 38/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 911 325
+Ready Queue [Program 1, Instruction 17/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 205 859, Program 2, Instruction 22/67, State "ready", IO Requests:  Registers 1/2 54 479]
+ CPU: Registers: 909 983
+Process On CPU: Program 3, Instruction 19/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 909 983
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 58***********
-Ready Queue []
- CPU: Registers: 628 189
-Process On CPU: Program 1, Instruction 39/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 628 189
-IO 1: Process On IO null
+-------INTERRUPTING-----
+-------DISPATCHING-----
+-------MOVING TO IO-----
+Ready Queue [Program 2, Instruction 22/67, State "ready", IO Requests:  Registers 1/2 54 479, Program 3, Instruction 19/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 909 983]
+ CPU: Registers: 998 327
+Process On CPU: null
+IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 998 327
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 59***********
--------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 115 748
-Process On CPU: Program 1, Instruction 40/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 115 748
-IO 1: Process On IO null
+Ready Queue [Program 3, Instruction 19/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 909 983]
+ CPU: Registers: 587 452
+Process On CPU: Program 2, Instruction 23/67, State "running", IO Requests:  Registers 1/2 587 452
+IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 998 327
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 60***********
-Ready Queue []
- CPU: Registers: 304 186
-Process On CPU: Program 1, Instruction 41/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 304 186
-IO 1: Process On IO null
+Ready Queue [Program 3, Instruction 19/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 909 983]
+ CPU: Registers: 517 536
+Process On CPU: Program 2, Instruction 24/67, State "running", IO Requests:  Registers 1/2 517 536
+IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 998 327
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 61***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 733 821
-Process On CPU: Program 1, Instruction 42/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 733 821
-IO 1: Process On IO null
+Ready Queue [Program 2, Instruction 24/67, State "ready", IO Requests:  Registers 1/2 517 536]
+ CPU: Registers: 960 58
+Process On CPU: Program 3, Instruction 20/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 960 58
+IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 998 327
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 62***********
-Ready Queue []
- CPU: Registers: 124 706
-Process On CPU: Program 1, Instruction 43/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 124 706
-IO 1: Process On IO null
+-------MOVING TO IO-----
+Ready Queue [Program 2, Instruction 24/67, State "ready", IO Requests:  Registers 1/2 517 536]
+ CPU: Registers: 443 76
+Process On CPU: null
+IO 1: Process On IO Program 1, Instruction 17/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 998 327
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 20/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76
 Waiting Queue: []
 *******TIME STEP 63***********
--------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 184 293
-Process On CPU: Program 1, Instruction 44/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 184 293
+Ready Queue [Program 1, Instruction 18/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 998 327]
+ CPU: Registers: 593 151
+Process On CPU: Program 2, Instruction 25/67, State "running", IO Requests:  Registers 1/2 593 151
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 20/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76
 Waiting Queue: []
 *******TIME STEP 64***********
-Ready Queue []
- CPU: Registers: 200 591
-Process On CPU: Program 1, Instruction 45/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 200 591
+Ready Queue [Program 1, Instruction 18/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 998 327]
+ CPU: Registers: 741 375
+Process On CPU: Program 2, Instruction 26/67, State "running", IO Requests:  Registers 1/2 741 375
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 20/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76
 Waiting Queue: []
 *******TIME STEP 65***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 218 42
-Process On CPU: Program 1, Instruction 46/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 218 42
+Ready Queue [Program 2, Instruction 26/67, State "ready", IO Requests:  Registers 1/2 741 375]
+ CPU: Registers: 965 208
+Process On CPU: Program 1, Instruction 19/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 965 208
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 20/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76
 Waiting Queue: []
 *******TIME STEP 66***********
-Ready Queue []
- CPU: Registers: 561 809
-Process On CPU: Program 1, Instruction 47/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 561 809
+Ready Queue [Program 2, Instruction 26/67, State "ready", IO Requests:  Registers 1/2 741 375]
+ CPU: Registers: 837 625
+Process On CPU: Program 1, Instruction 20/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 837 625
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 20/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76
 Waiting Queue: []
 *******TIME STEP 67***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 549 874
-Process On CPU: Program 1, Instruction 48/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 549 874
+Ready Queue [Program 1, Instruction 20/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 837 625, Program 3, Instruction 21/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76]
+ CPU: Registers: 777 911
+Process On CPU: Program 2, Instruction 27/67, State "running", IO Requests:  Registers 1/2 777 911
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 68***********
-Ready Queue []
- CPU: Registers: 942 779
-Process On CPU: Program 1, Instruction 49/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 942 779
+Ready Queue [Program 1, Instruction 20/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 837 625, Program 3, Instruction 21/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76]
+ CPU: Registers: 223 460
+Process On CPU: Program 2, Instruction 28/67, State "running", IO Requests:  Registers 1/2 223 460
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -604,107 +624,109 @@ Waiting Queue: []
 *******TIME STEP 69***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 201 793
-Process On CPU: Program 1, Instruction 50/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 201 793
+-------MOVING TO IO-----
+Ready Queue [Program 3, Instruction 21/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 443 76, Program 2, Instruction 28/67, State "ready", IO Requests:  Registers 1/2 223 460]
+ CPU: Registers: 876 236
+Process On CPU: null
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 876 236
 Waiting Queue: []
 *******TIME STEP 70***********
-Ready Queue []
- CPU: Registers: 720 326
-Process On CPU: Program 1, Instruction 51/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 720 326
+-------DISPATCHING-----
+-------MOVING TO IO-----
+Ready Queue [Program 2, Instruction 28/67, State "ready", IO Requests:  Registers 1/2 223 460]
+ CPU: Registers: 217 571
+Process On CPU: null
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
-Waiting Queue: []
+IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 876 236
+Waiting Queue: [Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571]
 *******TIME STEP 71***********
--------INTERRUPTING-----
 -------DISPATCHING-----
 Ready Queue []
- CPU: Registers: 655 957
-Process On CPU: Program 1, Instruction 52/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 655 957
+ CPU: Registers: 588 119
+Process On CPU: Program 2, Instruction 29/67, State "running", IO Requests:  Registers 1/2 588 119
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
-Waiting Queue: []
+IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 876 236
+Waiting Queue: [Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571]
 *******TIME STEP 72***********
 Ready Queue []
- CPU: Registers: 48 887
-Process On CPU: Program 1, Instruction 53/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 48 887
+ CPU: Registers: 437 9
+Process On CPU: Program 2, Instruction 30/67, State "running", IO Requests:  Registers 1/2 437 9
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
-Waiting Queue: []
+IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 876 236
+Waiting Queue: [Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571]
 *******TIME STEP 73***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
 Ready Queue []
- CPU: Registers: 64 7
-Process On CPU: Program 1, Instruction 54/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 64 7
+ CPU: Registers: 231 168
+Process On CPU: Program 2, Instruction 31/67, State "running", IO Requests:  Registers 1/2 231 168
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
-Waiting Queue: []
+IO 2: Process On IO Program 1, Instruction 20/100, State "waiting", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 876 236
+Waiting Queue: [Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571]
 *******TIME STEP 74***********
-Ready Queue []
- CPU: Registers: 883 600
-Process On CPU: Program 1, Instruction 55/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 883 600
+Ready Queue [Program 1, Instruction 21/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 876 236]
+ CPU: Registers: 235 914
+Process On CPU: Program 2, Instruction 32/67, State "running", IO Requests:  Registers 1/2 235 914
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571
 Waiting Queue: []
 *******TIME STEP 75***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 811 961
-Process On CPU: Program 1, Instruction 56/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 811 961
+Ready Queue [Program 2, Instruction 32/67, State "ready", IO Requests:  Registers 1/2 235 914]
+ CPU: Registers: 534 451
+Process On CPU: Program 1, Instruction 22/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 534 451
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571
 Waiting Queue: []
 *******TIME STEP 76***********
-Ready Queue []
- CPU: Registers: 48 16
-Process On CPU: Program 1, Instruction 57/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 48 16
+Ready Queue [Program 2, Instruction 32/67, State "ready", IO Requests:  Registers 1/2 235 914]
+ CPU: Registers: 247 834
+Process On CPU: Program 1, Instruction 23/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 247 834
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571
 Waiting Queue: []
 *******TIME STEP 77***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 902 358
-Process On CPU: Program 1, Instruction 58/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 902 358
+Ready Queue [Program 1, Instruction 23/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 247 834]
+ CPU: Registers: 596 339
+Process On CPU: Program 2, Instruction 33/67, State "running", IO Requests:  Registers 1/2 596 339
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571
 Waiting Queue: []
 *******TIME STEP 78***********
-Ready Queue []
- CPU: Registers: 707 255
-Process On CPU: Program 1, Instruction 59/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 707 255
+Ready Queue [Program 1, Instruction 23/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 247 834]
+ CPU: Registers: 491 592
+Process On CPU: Program 2, Instruction 34/67, State "running", IO Requests:  Registers 1/2 491 592
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 21/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571
 Waiting Queue: []
 *******TIME STEP 79***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 652 651
-Process On CPU: Program 1, Instruction 60/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 652 651
+Ready Queue [Program 2, Instruction 34/67, State "ready", IO Requests:  Registers 1/2 491 592, Program 3, Instruction 22/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571]
+ CPU: Registers: 588 490
+Process On CPU: Program 1, Instruction 24/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 588 490
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 80***********
-Ready Queue []
- CPU: Registers: 802 3
-Process On CPU: Program 1, Instruction 61/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 802 3
+Ready Queue [Program 2, Instruction 34/67, State "ready", IO Requests:  Registers 1/2 491 592, Program 3, Instruction 22/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571]
+ CPU: Registers: 61 351
+Process On CPU: Program 1, Instruction 25/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 61 351
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -712,17 +734,17 @@ Waiting Queue: []
 *******TIME STEP 81***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 557 568
-Process On CPU: Program 1, Instruction 62/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 557 568
+Ready Queue [Program 3, Instruction 22/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571, Program 1, Instruction 25/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 61 351]
+ CPU: Registers: 600 546
+Process On CPU: Program 2, Instruction 35/67, State "running", IO Requests:  Registers 1/2 600 546
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 82***********
-Ready Queue []
- CPU: Registers: 875 168
-Process On CPU: Program 1, Instruction 63/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 875 168
+Ready Queue [Program 3, Instruction 22/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 217 571, Program 1, Instruction 25/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 61 351]
+ CPU: Registers: 696 9
+Process On CPU: Program 2, Instruction 36/67, State "running", IO Requests:  Registers 1/2 696 9
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -730,143 +752,145 @@ Waiting Queue: []
 *******TIME STEP 83***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 787 298
-Process On CPU: Program 1, Instruction 64/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 787 298
+-------MOVING TO IO-----
+Ready Queue [Program 1, Instruction 25/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 61 351, Program 2, Instruction 36/67, State "ready", IO Requests:  Registers 1/2 696 9]
+ CPU: Registers: 302 19
+Process On CPU: null
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 22/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19
 Waiting Queue: []
 *******TIME STEP 84***********
-Ready Queue []
- CPU: Registers: 488 623
-Process On CPU: Program 1, Instruction 65/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 488 623
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 36/67, State "ready", IO Requests:  Registers 1/2 696 9]
+ CPU: Registers: 840 752
+Process On CPU: Program 1, Instruction 26/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 840 752
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 22/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19
 Waiting Queue: []
 *******TIME STEP 85***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 696 944
-Process On CPU: Program 1, Instruction 66/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 696 944
+Ready Queue [Program 2, Instruction 36/67, State "ready", IO Requests:  Registers 1/2 696 9]
+ CPU: Registers: 445 233
+Process On CPU: Program 1, Instruction 27/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 445 233
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 22/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19
 Waiting Queue: []
 *******TIME STEP 86***********
-Ready Queue []
- CPU: Registers: 971 726
-Process On CPU: Program 1, Instruction 67/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 971 726
-IO 1: Process On IO null
-Waiting Queue: []
-IO 2: Process On IO null
-Waiting Queue: []
-*******TIME STEP 87***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 909 328
-Process On CPU: Program 1, Instruction 68/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 909 328
+Ready Queue [Program 1, Instruction 27/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 445 233]
+ CPU: Registers: 535 315
+Process On CPU: Program 2, Instruction 37/67, State "running", IO Requests:  Registers 1/2 535 315
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 22/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19
+Waiting Queue: []
+*******TIME STEP 87***********
+Ready Queue [Program 1, Instruction 27/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 445 233]
+ CPU: Registers: 741 177
+Process On CPU: Program 2, Instruction 38/67, State "running", IO Requests:  Registers 1/2 741 177
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO Program 3, Instruction 22/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19
 Waiting Queue: []
 *******TIME STEP 88***********
-Ready Queue []
- CPU: Registers: 676 416
-Process On CPU: Program 1, Instruction 69/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 676 416
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 38/67, State "ready", IO Requests:  Registers 1/2 741 177, Program 3, Instruction 23/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19]
+ CPU: Registers: 245 201
+Process On CPU: Program 1, Instruction 28/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 245 201
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 89***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 278 886
-Process On CPU: Program 1, Instruction 70/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 278 886
+Ready Queue [Program 2, Instruction 38/67, State "ready", IO Requests:  Registers 1/2 741 177, Program 3, Instruction 23/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19]
+ CPU: Registers: 268 977
+Process On CPU: Program 1, Instruction 29/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 268 977
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 90***********
-Ready Queue []
- CPU: Registers: 874 544
-Process On CPU: Program 1, Instruction 71/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 874 544
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 23/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19, Program 1, Instruction 29/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 268 977]
+ CPU: Registers: 228 653
+Process On CPU: Program 2, Instruction 39/67, State "running", IO Requests:  Registers 1/2 228 653
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 91***********
--------INTERRUPTING-----
--------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 265 0
-Process On CPU: Program 1, Instruction 72/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 265 0
+Ready Queue [Program 3, Instruction 23/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 302 19, Program 1, Instruction 29/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 268 977]
+ CPU: Registers: 741 809
+Process On CPU: Program 2, Instruction 40/67, State "running", IO Requests:  Registers 1/2 741 809
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 92***********
-Ready Queue []
- CPU: Registers: 598 839
-Process On CPU: Program 1, Instruction 73/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 598 839
-IO 1: Process On IO null
-Waiting Queue: []
-IO 2: Process On IO null
-Waiting Queue: []
-*******TIME STEP 93***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 653 1
-Process On CPU: Program 1, Instruction 74/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 653 1
+-------MOVING TO IO-----
+Ready Queue [Program 1, Instruction 29/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 268 977, Program 2, Instruction 40/67, State "ready", IO Requests:  Registers 1/2 741 809]
+ CPU: Registers: 289 486
+Process On CPU: null
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 23/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486
+Waiting Queue: []
+*******TIME STEP 93***********
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 40/67, State "ready", IO Requests:  Registers 1/2 741 809]
+ CPU: Registers: 539 890
+Process On CPU: Program 1, Instruction 30/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 539 890
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO Program 3, Instruction 23/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486
 Waiting Queue: []
 *******TIME STEP 94***********
-Ready Queue []
- CPU: Registers: 307 320
-Process On CPU: Program 1, Instruction 75/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 307 320
+Ready Queue [Program 2, Instruction 40/67, State "ready", IO Requests:  Registers 1/2 741 809]
+ CPU: Registers: 662 977
+Process On CPU: Program 1, Instruction 31/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 662 977
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 23/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486
 Waiting Queue: []
 *******TIME STEP 95***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 519 248
-Process On CPU: Program 1, Instruction 76/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 519 248
+Ready Queue [Program 1, Instruction 31/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 662 977]
+ CPU: Registers: 148 937
+Process On CPU: Program 2, Instruction 41/67, State "running", IO Requests:  Registers 1/2 148 937
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 23/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486
 Waiting Queue: []
 *******TIME STEP 96***********
-Ready Queue []
- CPU: Registers: 361 156
-Process On CPU: Program 1, Instruction 77/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 361 156
+Ready Queue [Program 1, Instruction 31/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 662 977]
+ CPU: Registers: 349 157
+Process On CPU: Program 2, Instruction 42/67, State "running", IO Requests:  Registers 1/2 349 157
 IO 1: Process On IO null
 Waiting Queue: []
-IO 2: Process On IO null
+IO 2: Process On IO Program 3, Instruction 23/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486
 Waiting Queue: []
 *******TIME STEP 97***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 623 44
-Process On CPU: Program 1, Instruction 78/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 623 44
+Ready Queue [Program 2, Instruction 42/67, State "ready", IO Requests:  Registers 1/2 349 157, Program 3, Instruction 24/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486]
+ CPU: Registers: 736 831
+Process On CPU: Program 1, Instruction 32/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 736 831
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 98***********
-Ready Queue []
- CPU: Registers: 377 904
-Process On CPU: Program 1, Instruction 79/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 377 904
+Ready Queue [Program 2, Instruction 42/67, State "ready", IO Requests:  Registers 1/2 349 157, Program 3, Instruction 24/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486]
+ CPU: Registers: 735 155
+Process On CPU: Program 1, Instruction 33/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 735 155
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -874,17 +898,17 @@ Waiting Queue: []
 *******TIME STEP 99***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 633 198
-Process On CPU: Program 1, Instruction 80/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 633 198
+Ready Queue [Program 3, Instruction 24/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486, Program 1, Instruction 33/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 735 155]
+ CPU: Registers: 489 984
+Process On CPU: Program 2, Instruction 43/67, State "running", IO Requests:  Registers 1/2 489 984
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 100***********
-Ready Queue []
- CPU: Registers: 402 311
-Process On CPU: Program 1, Instruction 81/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 402 311
+Ready Queue [Program 3, Instruction 24/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 289 486, Program 1, Instruction 33/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 735 155]
+ CPU: Registers: 979 184
+Process On CPU: Program 2, Instruction 44/67, State "running", IO Requests:  Registers 1/2 979 184
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -892,17 +916,17 @@ Waiting Queue: []
 *******TIME STEP 101***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 471 283
-Process On CPU: Program 1, Instruction 82/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 471 283
+Ready Queue [Program 1, Instruction 33/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 735 155, Program 2, Instruction 44/67, State "ready", IO Requests:  Registers 1/2 979 184]
+ CPU: Registers: 60 782
+Process On CPU: Program 3, Instruction 25/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 60 782
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 102***********
-Ready Queue []
- CPU: Registers: 930 292
-Process On CPU: Program 1, Instruction 83/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 930 292
+Ready Queue [Program 1, Instruction 33/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 735 155, Program 2, Instruction 44/67, State "ready", IO Requests:  Registers 1/2 979 184]
+ CPU: Registers: 50 537
+Process On CPU: Program 3, Instruction 26/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 50 537
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -910,17 +934,17 @@ Waiting Queue: []
 *******TIME STEP 103***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 485 189
-Process On CPU: Program 1, Instruction 84/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 485 189
+Ready Queue [Program 2, Instruction 44/67, State "ready", IO Requests:  Registers 1/2 979 184, Program 3, Instruction 26/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 50 537]
+ CPU: Registers: 189 746
+Process On CPU: Program 1, Instruction 34/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 189 746
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 104***********
-Ready Queue []
- CPU: Registers: 488 80
-Process On CPU: Program 1, Instruction 85/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 488 80
+Ready Queue [Program 2, Instruction 44/67, State "ready", IO Requests:  Registers 1/2 979 184, Program 3, Instruction 26/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 50 537]
+ CPU: Registers: 934 402
+Process On CPU: Program 1, Instruction 35/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 934 402
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -928,17 +952,17 @@ Waiting Queue: []
 *******TIME STEP 105***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 29 493
-Process On CPU: Program 1, Instruction 86/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 29 493
+Ready Queue [Program 3, Instruction 26/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 50 537, Program 1, Instruction 35/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 934 402]
+ CPU: Registers: 593 879
+Process On CPU: Program 2, Instruction 45/67, State "running", IO Requests:  Registers 1/2 593 879
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 106***********
-Ready Queue []
- CPU: Registers: 558 348
-Process On CPU: Program 1, Instruction 87/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 558 348
+Ready Queue [Program 3, Instruction 26/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 50 537, Program 1, Instruction 35/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 934 402]
+ CPU: Registers: 691 995
+Process On CPU: Program 2, Instruction 46/67, State "running", IO Requests:  Registers 1/2 691 995
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -946,17 +970,17 @@ Waiting Queue: []
 *******TIME STEP 107***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 864 14
-Process On CPU: Program 1, Instruction 88/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 864 14
+Ready Queue [Program 1, Instruction 35/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 934 402, Program 2, Instruction 46/67, State "ready", IO Requests:  Registers 1/2 691 995]
+ CPU: Registers: 373 155
+Process On CPU: Program 3, Instruction 27/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 373 155
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 108***********
-Ready Queue []
- CPU: Registers: 637 948
-Process On CPU: Program 1, Instruction 89/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 637 948
+Ready Queue [Program 1, Instruction 35/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 934 402, Program 2, Instruction 46/67, State "ready", IO Requests:  Registers 1/2 691 995]
+ CPU: Registers: 838 447
+Process On CPU: Program 3, Instruction 28/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 838 447
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -964,17 +988,17 @@ Waiting Queue: []
 *******TIME STEP 109***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 997 265
-Process On CPU: Program 1, Instruction 90/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 997 265
+Ready Queue [Program 2, Instruction 46/67, State "ready", IO Requests:  Registers 1/2 691 995, Program 3, Instruction 28/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 838 447]
+ CPU: Registers: 84 610
+Process On CPU: Program 1, Instruction 36/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 84 610
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 110***********
-Ready Queue []
- CPU: Registers: 808 264
-Process On CPU: Program 1, Instruction 91/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 808 264
+Ready Queue [Program 2, Instruction 46/67, State "ready", IO Requests:  Registers 1/2 691 995, Program 3, Instruction 28/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 838 447]
+ CPU: Registers: 274 354
+Process On CPU: Program 1, Instruction 37/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 274 354
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -982,17 +1006,17 @@ Waiting Queue: []
 *******TIME STEP 111***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 828 49
-Process On CPU: Program 1, Instruction 92/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 828 49
+Ready Queue [Program 3, Instruction 28/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 838 447, Program 1, Instruction 37/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 274 354]
+ CPU: Registers: 389 769
+Process On CPU: Program 2, Instruction 47/67, State "running", IO Requests:  Registers 1/2 389 769
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 112***********
-Ready Queue []
- CPU: Registers: 514 816
-Process On CPU: Program 1, Instruction 93/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 514 816
+Ready Queue [Program 3, Instruction 28/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 838 447, Program 1, Instruction 37/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 274 354]
+ CPU: Registers: 145 214
+Process On CPU: Program 2, Instruction 48/67, State "running", IO Requests:  Registers 1/2 145 214
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -1000,17 +1024,17 @@ Waiting Queue: []
 *******TIME STEP 113***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 788 906
-Process On CPU: Program 1, Instruction 94/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 788 906
+Ready Queue [Program 1, Instruction 37/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 274 354, Program 2, Instruction 48/67, State "ready", IO Requests:  Registers 1/2 145 214]
+ CPU: Registers: 619 83
+Process On CPU: Program 3, Instruction 29/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 619 83
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 114***********
-Ready Queue []
- CPU: Registers: 460 444
-Process On CPU: Program 1, Instruction 95/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 460 444
+Ready Queue [Program 1, Instruction 37/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 274 354, Program 2, Instruction 48/67, State "ready", IO Requests:  Registers 1/2 145 214]
+ CPU: Registers: 335 866
+Process On CPU: Program 3, Instruction 30/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 335 866
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -1018,17 +1042,17 @@ Waiting Queue: []
 *******TIME STEP 115***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 738 707
-Process On CPU: Program 1, Instruction 96/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 738 707
+Ready Queue [Program 2, Instruction 48/67, State "ready", IO Requests:  Registers 1/2 145 214, Program 3, Instruction 30/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 335 866]
+ CPU: Registers: 733 955
+Process On CPU: Program 1, Instruction 38/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 733 955
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 116***********
-Ready Queue []
- CPU: Registers: 686 565
-Process On CPU: Program 1, Instruction 97/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 686 565
+Ready Queue [Program 2, Instruction 48/67, State "ready", IO Requests:  Registers 1/2 145 214, Program 3, Instruction 30/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 335 866]
+ CPU: Registers: 115 104
+Process On CPU: Program 1, Instruction 39/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 115 104
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -1036,17 +1060,17 @@ Waiting Queue: []
 *******TIME STEP 117***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 723 677
-Process On CPU: Program 1, Instruction 98/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 723 677
+Ready Queue [Program 3, Instruction 30/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 335 866, Program 1, Instruction 39/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 115 104]
+ CPU: Registers: 206 567
+Process On CPU: Program 2, Instruction 49/67, State "running", IO Requests:  Registers 1/2 206 567
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 118***********
-Ready Queue []
- CPU: Registers: 727 123
-Process On CPU: Program 1, Instruction 99/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 727 123
+Ready Queue [Program 3, Instruction 30/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 335 866, Program 1, Instruction 39/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 115 104]
+ CPU: Registers: 871 97
+Process On CPU: Program 2, Instruction 50/67, State "running", IO Requests:  Registers 1/2 871 97
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -1054,17 +1078,17 @@ Waiting Queue: []
 *******TIME STEP 119***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
-Ready Queue []
- CPU: Registers: 880 551
-Process On CPU: Program 1, Instruction 100/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 880 551
+Ready Queue [Program 1, Instruction 39/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 115 104, Program 2, Instruction 50/67, State "ready", IO Requests:  Registers 1/2 871 97]
+ CPU: Registers: 696 446
+Process On CPU: Program 3, Instruction 31/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 696 446
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
 Waiting Queue: []
 *******TIME STEP 120***********
-Ready Queue []
- CPU: Registers: 160 620
-Process On CPU: Program 1, Instruction 101/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 160 620
+Ready Queue [Program 1, Instruction 39/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 115 104, Program 2, Instruction 50/67, State "ready", IO Requests:  Registers 1/2 871 97]
+ CPU: Registers: 246 384
+Process On CPU: Program 3, Instruction 32/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 246 384
 IO 1: Process On IO null
 Waiting Queue: []
 IO 2: Process On IO null
@@ -1072,9 +1096,1901 @@ Waiting Queue: []
 *******TIME STEP 121***********
 -------INTERRUPTING-----
 -------DISPATCHING-----
+Ready Queue [Program 2, Instruction 50/67, State "ready", IO Requests:  Registers 1/2 871 97, Program 3, Instruction 32/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 246 384]
+ CPU: Registers: 105 886
+Process On CPU: Program 1, Instruction 40/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 105 886
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 122***********
+Ready Queue [Program 2, Instruction 50/67, State "ready", IO Requests:  Registers 1/2 871 97, Program 3, Instruction 32/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 246 384]
+ CPU: Registers: 285 551
+Process On CPU: Program 1, Instruction 41/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 285 551
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 123***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 32/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 246 384, Program 1, Instruction 41/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 285 551]
+ CPU: Registers: 496 684
+Process On CPU: Program 2, Instruction 51/67, State "running", IO Requests:  Registers 1/2 496 684
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 124***********
+Ready Queue [Program 3, Instruction 32/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 246 384, Program 1, Instruction 41/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 285 551]
+ CPU: Registers: 114 674
+Process On CPU: Program 2, Instruction 52/67, State "running", IO Requests:  Registers 1/2 114 674
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 125***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 41/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 285 551, Program 2, Instruction 52/67, State "ready", IO Requests:  Registers 1/2 114 674]
+ CPU: Registers: 665 649
+Process On CPU: Program 3, Instruction 33/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 665 649
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 126***********
+Ready Queue [Program 1, Instruction 41/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 285 551, Program 2, Instruction 52/67, State "ready", IO Requests:  Registers 1/2 114 674]
+ CPU: Registers: 57 998
+Process On CPU: Program 3, Instruction 34/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 57 998
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 127***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 52/67, State "ready", IO Requests:  Registers 1/2 114 674, Program 3, Instruction 34/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 57 998]
+ CPU: Registers: 691 573
+Process On CPU: Program 1, Instruction 42/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 691 573
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 128***********
+Ready Queue [Program 2, Instruction 52/67, State "ready", IO Requests:  Registers 1/2 114 674, Program 3, Instruction 34/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 57 998]
+ CPU: Registers: 862 301
+Process On CPU: Program 1, Instruction 43/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 862 301
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 129***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 34/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 57 998, Program 1, Instruction 43/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 862 301]
+ CPU: Registers: 218 698
+Process On CPU: Program 2, Instruction 53/67, State "running", IO Requests:  Registers 1/2 218 698
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 130***********
+Ready Queue [Program 3, Instruction 34/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 57 998, Program 1, Instruction 43/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 862 301]
+ CPU: Registers: 452 706
+Process On CPU: Program 2, Instruction 54/67, State "running", IO Requests:  Registers 1/2 452 706
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 131***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 43/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 862 301, Program 2, Instruction 54/67, State "ready", IO Requests:  Registers 1/2 452 706]
+ CPU: Registers: 888 872
+Process On CPU: Program 3, Instruction 35/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 888 872
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 132***********
+Ready Queue [Program 1, Instruction 43/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 862 301, Program 2, Instruction 54/67, State "ready", IO Requests:  Registers 1/2 452 706]
+ CPU: Registers: 372 875
+Process On CPU: Program 3, Instruction 36/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 372 875
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 133***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 54/67, State "ready", IO Requests:  Registers 1/2 452 706, Program 3, Instruction 36/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 372 875]
+ CPU: Registers: 471 488
+Process On CPU: Program 1, Instruction 44/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 471 488
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 134***********
+Ready Queue [Program 2, Instruction 54/67, State "ready", IO Requests:  Registers 1/2 452 706, Program 3, Instruction 36/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 372 875]
+ CPU: Registers: 689 224
+Process On CPU: Program 1, Instruction 45/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 689 224
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 135***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 36/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 372 875, Program 1, Instruction 45/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 689 224]
+ CPU: Registers: 466 896
+Process On CPU: Program 2, Instruction 55/67, State "running", IO Requests:  Registers 1/2 466 896
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 136***********
+Ready Queue [Program 3, Instruction 36/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 372 875, Program 1, Instruction 45/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 689 224]
+ CPU: Registers: 688 718
+Process On CPU: Program 2, Instruction 56/67, State "running", IO Requests:  Registers 1/2 688 718
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 137***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 45/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 689 224, Program 2, Instruction 56/67, State "ready", IO Requests:  Registers 1/2 688 718]
+ CPU: Registers: 409 314
+Process On CPU: Program 3, Instruction 37/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 409 314
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 138***********
+Ready Queue [Program 1, Instruction 45/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 689 224, Program 2, Instruction 56/67, State "ready", IO Requests:  Registers 1/2 688 718]
+ CPU: Registers: 374 439
+Process On CPU: Program 3, Instruction 38/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 374 439
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 139***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 56/67, State "ready", IO Requests:  Registers 1/2 688 718, Program 3, Instruction 38/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 374 439]
+ CPU: Registers: 787 89
+Process On CPU: Program 1, Instruction 46/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 787 89
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 140***********
+Ready Queue [Program 2, Instruction 56/67, State "ready", IO Requests:  Registers 1/2 688 718, Program 3, Instruction 38/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 374 439]
+ CPU: Registers: 505 250
+Process On CPU: Program 1, Instruction 47/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 505 250
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 141***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 38/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 374 439, Program 1, Instruction 47/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 505 250]
+ CPU: Registers: 966 281
+Process On CPU: Program 2, Instruction 57/67, State "running", IO Requests:  Registers 1/2 966 281
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 142***********
+Ready Queue [Program 3, Instruction 38/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 374 439, Program 1, Instruction 47/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 505 250]
+ CPU: Registers: 312 899
+Process On CPU: Program 2, Instruction 58/67, State "running", IO Requests:  Registers 1/2 312 899
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 143***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 47/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 505 250, Program 2, Instruction 58/67, State "ready", IO Requests:  Registers 1/2 312 899]
+ CPU: Registers: 714 889
+Process On CPU: Program 3, Instruction 39/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 714 889
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 144***********
+Ready Queue [Program 1, Instruction 47/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 505 250, Program 2, Instruction 58/67, State "ready", IO Requests:  Registers 1/2 312 899]
+ CPU: Registers: 462 231
+Process On CPU: Program 3, Instruction 40/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 231
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 145***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 58/67, State "ready", IO Requests:  Registers 1/2 312 899, Program 3, Instruction 40/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 231]
+ CPU: Registers: 75 728
+Process On CPU: Program 1, Instruction 48/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 75 728
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 146***********
+Ready Queue [Program 2, Instruction 58/67, State "ready", IO Requests:  Registers 1/2 312 899, Program 3, Instruction 40/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 231]
+ CPU: Registers: 154 503
+Process On CPU: Program 1, Instruction 49/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 154 503
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 147***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 40/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 231, Program 1, Instruction 49/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 154 503]
+ CPU: Registers: 365 513
+Process On CPU: Program 2, Instruction 59/67, State "running", IO Requests:  Registers 1/2 365 513
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 148***********
+Ready Queue [Program 3, Instruction 40/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 462 231, Program 1, Instruction 49/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 154 503]
+ CPU: Registers: 722 646
+Process On CPU: Program 2, Instruction 60/67, State "running", IO Requests:  Registers 1/2 722 646
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 149***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 49/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 154 503, Program 2, Instruction 60/67, State "ready", IO Requests:  Registers 1/2 722 646]
+ CPU: Registers: 794 589
+Process On CPU: Program 3, Instruction 41/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 794 589
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 150***********
+Ready Queue [Program 1, Instruction 49/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 154 503, Program 2, Instruction 60/67, State "ready", IO Requests:  Registers 1/2 722 646]
+ CPU: Registers: 774 920
+Process On CPU: Program 3, Instruction 42/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 774 920
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 151***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 60/67, State "ready", IO Requests:  Registers 1/2 722 646, Program 3, Instruction 42/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 774 920]
+ CPU: Registers: 983 580
+Process On CPU: Program 1, Instruction 50/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 983 580
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 152***********
+Ready Queue [Program 2, Instruction 60/67, State "ready", IO Requests:  Registers 1/2 722 646, Program 3, Instruction 42/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 774 920]
+ CPU: Registers: 721 385
+Process On CPU: Program 1, Instruction 51/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 721 385
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 153***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 42/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 774 920, Program 1, Instruction 51/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 721 385]
+ CPU: Registers: 813 495
+Process On CPU: Program 2, Instruction 61/67, State "running", IO Requests:  Registers 1/2 813 495
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 154***********
+Ready Queue [Program 3, Instruction 42/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 774 920, Program 1, Instruction 51/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 721 385]
+ CPU: Registers: 833 967
+Process On CPU: Program 2, Instruction 62/67, State "running", IO Requests:  Registers 1/2 833 967
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 155***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 51/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 721 385, Program 2, Instruction 62/67, State "ready", IO Requests:  Registers 1/2 833 967]
+ CPU: Registers: 11 100
+Process On CPU: Program 3, Instruction 43/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 11 100
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 156***********
+Ready Queue [Program 1, Instruction 51/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 721 385, Program 2, Instruction 62/67, State "ready", IO Requests:  Registers 1/2 833 967]
+ CPU: Registers: 648 301
+Process On CPU: Program 3, Instruction 44/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 648 301
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 157***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 62/67, State "ready", IO Requests:  Registers 1/2 833 967, Program 3, Instruction 44/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 648 301]
+ CPU: Registers: 696 335
+Process On CPU: Program 1, Instruction 52/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 696 335
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 158***********
+Ready Queue [Program 2, Instruction 62/67, State "ready", IO Requests:  Registers 1/2 833 967, Program 3, Instruction 44/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 648 301]
+ CPU: Registers: 971 828
+Process On CPU: Program 1, Instruction 53/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 971 828
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 159***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 44/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 648 301, Program 1, Instruction 53/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 971 828]
+ CPU: Registers: 406 690
+Process On CPU: Program 2, Instruction 63/67, State "running", IO Requests:  Registers 1/2 406 690
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 160***********
+Ready Queue [Program 3, Instruction 44/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 648 301, Program 1, Instruction 53/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 971 828]
+ CPU: Registers: 664 432
+Process On CPU: Program 2, Instruction 64/67, State "running", IO Requests:  Registers 1/2 664 432
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 161***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 53/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 971 828, Program 2, Instruction 64/67, State "ready", IO Requests:  Registers 1/2 664 432]
+ CPU: Registers: 394 617
+Process On CPU: Program 3, Instruction 45/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 394 617
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 162***********
+Ready Queue [Program 1, Instruction 53/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 971 828, Program 2, Instruction 64/67, State "ready", IO Requests:  Registers 1/2 664 432]
+ CPU: Registers: 324 429
+Process On CPU: Program 3, Instruction 46/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 324 429
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 163***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 64/67, State "ready", IO Requests:  Registers 1/2 664 432, Program 3, Instruction 46/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 324 429]
+ CPU: Registers: 264 284
+Process On CPU: Program 1, Instruction 54/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 264 284
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 164***********
+Ready Queue [Program 2, Instruction 64/67, State "ready", IO Requests:  Registers 1/2 664 432, Program 3, Instruction 46/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 324 429]
+ CPU: Registers: 754 757
+Process On CPU: Program 1, Instruction 55/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 754 757
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 165***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 46/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 324 429, Program 1, Instruction 55/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 754 757]
+ CPU: Registers: 116 498
+Process On CPU: Program 2, Instruction 65/67, State "running", IO Requests:  Registers 1/2 116 498
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 166***********
+Ready Queue [Program 3, Instruction 46/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 324 429, Program 1, Instruction 55/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 754 757]
+ CPU: Registers: 24 615
+Process On CPU: Program 2, Instruction 66/67, State "running", IO Requests:  Registers 1/2 24 615
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 167***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 55/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 754 757, Program 2, Instruction 66/67, State "ready", IO Requests:  Registers 1/2 24 615]
+ CPU: Registers: 403 278
+Process On CPU: Program 3, Instruction 47/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 403 278
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 168***********
+Ready Queue [Program 1, Instruction 55/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 754 757, Program 2, Instruction 66/67, State "ready", IO Requests:  Registers 1/2 24 615]
+ CPU: Registers: 483 188
+Process On CPU: Program 3, Instruction 48/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 483 188
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 169***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 66/67, State "ready", IO Requests:  Registers 1/2 24 615, Program 3, Instruction 48/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 483 188]
+ CPU: Registers: 552 297
+Process On CPU: Program 1, Instruction 56/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 552 297
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 170***********
+Ready Queue [Program 2, Instruction 66/67, State "ready", IO Requests:  Registers 1/2 24 615, Program 3, Instruction 48/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 483 188]
+ CPU: Registers: 363 289
+Process On CPU: Program 1, Instruction 57/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 363 289
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 171***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 48/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 483 188, Program 1, Instruction 57/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 363 289]
+ CPU: Registers: 674 108
+Process On CPU: Program 2, Instruction 67/67, State "running", IO Requests:  Registers 1/2 674 108
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 172***********
+Ready Queue [Program 3, Instruction 48/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 483 188, Program 1, Instruction 57/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 363 289]
+ CPU: Registers: 450 764
+Process On CPU: Program 2, Instruction 68/67, State "running", IO Requests:  Registers 1/2 450 764
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 173***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 57/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 363 289, Program 2, Instruction 68/67, State "ready", IO Requests:  Registers 1/2 450 764]
+ CPU: Registers: 450 631
+Process On CPU: Program 3, Instruction 49/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 450 631
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 174***********
+Ready Queue [Program 1, Instruction 57/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 363 289, Program 2, Instruction 68/67, State "ready", IO Requests:  Registers 1/2 450 764]
+ CPU: Registers: 917 310
+Process On CPU: Program 3, Instruction 50/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 917 310
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 175***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 2, Instruction 68/67, State "ready", IO Requests:  Registers 1/2 450 764, Program 3, Instruction 50/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 917 310]
+ CPU: Registers: 643 451
+Process On CPU: Program 1, Instruction 58/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 643 451
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 176***********
+Ready Queue [Program 2, Instruction 68/67, State "ready", IO Requests:  Registers 1/2 450 764, Program 3, Instruction 50/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 917 310]
+ CPU: Registers: 293 12
+Process On CPU: Program 1, Instruction 59/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 293 12
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 177***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+-------TERMINATING-----
+Ready Queue [Program 3, Instruction 50/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 917 310, Program 1, Instruction 59/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 293 12]
+ CPU: Registers: 610 417
+Process On CPU: null
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 178***********
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 59/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 293 12]
+ CPU: Registers: 687 289
+Process On CPU: Program 3, Instruction 51/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 687 289
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 179***********
+Ready Queue [Program 1, Instruction 59/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 293 12]
+ CPU: Registers: 549 477
+Process On CPU: Program 3, Instruction 52/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 549 477
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 180***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 52/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 549 477]
+ CPU: Registers: 943 627
+Process On CPU: Program 1, Instruction 60/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 943 627
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 181***********
+Ready Queue [Program 3, Instruction 52/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 549 477]
+ CPU: Registers: 968 906
+Process On CPU: Program 1, Instruction 61/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 968 906
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 182***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 61/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 968 906]
+ CPU: Registers: 900 152
+Process On CPU: Program 3, Instruction 53/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 900 152
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 183***********
+Ready Queue [Program 1, Instruction 61/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 968 906]
+ CPU: Registers: 82 651
+Process On CPU: Program 3, Instruction 54/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 82 651
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 184***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 54/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 82 651]
+ CPU: Registers: 892 637
+Process On CPU: Program 1, Instruction 62/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 892 637
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 185***********
+Ready Queue [Program 3, Instruction 54/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 82 651]
+ CPU: Registers: 174 724
+Process On CPU: Program 1, Instruction 63/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 174 724
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 186***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 63/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 174 724]
+ CPU: Registers: 424 354
+Process On CPU: Program 3, Instruction 55/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 424 354
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 187***********
+Ready Queue [Program 1, Instruction 63/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 174 724]
+ CPU: Registers: 757 35
+Process On CPU: Program 3, Instruction 56/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 757 35
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 188***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 56/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 757 35]
+ CPU: Registers: 531 326
+Process On CPU: Program 1, Instruction 64/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 531 326
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 189***********
+Ready Queue [Program 3, Instruction 56/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 757 35]
+ CPU: Registers: 897 21
+Process On CPU: Program 1, Instruction 65/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 897 21
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 190***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 65/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 897 21]
+ CPU: Registers: 980 915
+Process On CPU: Program 3, Instruction 57/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 980 915
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 191***********
+Ready Queue [Program 1, Instruction 65/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 897 21]
+ CPU: Registers: 45 177
+Process On CPU: Program 3, Instruction 58/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 45 177
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 192***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 58/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 45 177]
+ CPU: Registers: 227 550
+Process On CPU: Program 1, Instruction 66/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 227 550
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 193***********
+Ready Queue [Program 3, Instruction 58/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 45 177]
+ CPU: Registers: 160 235
+Process On CPU: Program 1, Instruction 67/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 160 235
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 194***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 67/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 160 235]
+ CPU: Registers: 295 861
+Process On CPU: Program 3, Instruction 59/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 295 861
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 195***********
+Ready Queue [Program 1, Instruction 67/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 160 235]
+ CPU: Registers: 304 455
+Process On CPU: Program 3, Instruction 60/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 304 455
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 196***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 60/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 304 455]
+ CPU: Registers: 829 61
+Process On CPU: Program 1, Instruction 68/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 829 61
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 197***********
+Ready Queue [Program 3, Instruction 60/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 304 455]
+ CPU: Registers: 411 99
+Process On CPU: Program 1, Instruction 69/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 411 99
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 198***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 69/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 411 99]
+ CPU: Registers: 46 247
+Process On CPU: Program 3, Instruction 61/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 46 247
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 199***********
+Ready Queue [Program 1, Instruction 69/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 411 99]
+ CPU: Registers: 304 559
+Process On CPU: Program 3, Instruction 62/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 304 559
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 200***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 62/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 304 559]
+ CPU: Registers: 520 982
+Process On CPU: Program 1, Instruction 70/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 520 982
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 201***********
+Ready Queue [Program 3, Instruction 62/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 304 559]
+ CPU: Registers: 724 195
+Process On CPU: Program 1, Instruction 71/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 724 195
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 202***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 71/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 724 195]
+ CPU: Registers: 100 351
+Process On CPU: Program 3, Instruction 63/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 100 351
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 203***********
+Ready Queue [Program 1, Instruction 71/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 724 195]
+ CPU: Registers: 81 477
+Process On CPU: Program 3, Instruction 64/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 81 477
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 204***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 64/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 81 477]
+ CPU: Registers: 719 541
+Process On CPU: Program 1, Instruction 72/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 719 541
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 205***********
+Ready Queue [Program 3, Instruction 64/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 81 477]
+ CPU: Registers: 49 93
+Process On CPU: Program 1, Instruction 73/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 49 93
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 206***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 73/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 49 93]
+ CPU: Registers: 530 49
+Process On CPU: Program 3, Instruction 65/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 530 49
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 207***********
+Ready Queue [Program 1, Instruction 73/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 49 93]
+ CPU: Registers: 888 775
+Process On CPU: Program 3, Instruction 66/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 888 775
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 208***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 66/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 888 775]
+ CPU: Registers: 372 851
+Process On CPU: Program 1, Instruction 74/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 372 851
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 209***********
+Ready Queue [Program 3, Instruction 66/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 888 775]
+ CPU: Registers: 959 389
+Process On CPU: Program 1, Instruction 75/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 959 389
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 210***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 75/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 959 389]
+ CPU: Registers: 152 791
+Process On CPU: Program 3, Instruction 67/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 152 791
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 211***********
+Ready Queue [Program 1, Instruction 75/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 959 389]
+ CPU: Registers: 741 134
+Process On CPU: Program 3, Instruction 68/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 741 134
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 212***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 68/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 741 134]
+ CPU: Registers: 937 366
+Process On CPU: Program 1, Instruction 76/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 937 366
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 213***********
+Ready Queue [Program 3, Instruction 68/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 741 134]
+ CPU: Registers: 448 111
+Process On CPU: Program 1, Instruction 77/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 448 111
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 214***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 77/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 448 111]
+ CPU: Registers: 561 360
+Process On CPU: Program 3, Instruction 69/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 561 360
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 215***********
+Ready Queue [Program 1, Instruction 77/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 448 111]
+ CPU: Registers: 905 605
+Process On CPU: Program 3, Instruction 70/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 905 605
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 216***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 70/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 905 605]
+ CPU: Registers: 841 963
+Process On CPU: Program 1, Instruction 78/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 841 963
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 217***********
+Ready Queue [Program 3, Instruction 70/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 905 605]
+ CPU: Registers: 918 852
+Process On CPU: Program 1, Instruction 79/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 918 852
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 218***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 79/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 918 852]
+ CPU: Registers: 347 371
+Process On CPU: Program 3, Instruction 71/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 347 371
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 219***********
+Ready Queue [Program 1, Instruction 79/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 918 852]
+ CPU: Registers: 928 734
+Process On CPU: Program 3, Instruction 72/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 928 734
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 220***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 72/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 928 734]
+ CPU: Registers: 315 950
+Process On CPU: Program 1, Instruction 80/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 315 950
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 221***********
+Ready Queue [Program 3, Instruction 72/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 928 734]
+ CPU: Registers: 909 123
+Process On CPU: Program 1, Instruction 81/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 909 123
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 222***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 81/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 909 123]
+ CPU: Registers: 52 58
+Process On CPU: Program 3, Instruction 73/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 52 58
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 223***********
+Ready Queue [Program 1, Instruction 81/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 909 123]
+ CPU: Registers: 432 34
+Process On CPU: Program 3, Instruction 74/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 432 34
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 224***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 74/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 432 34]
+ CPU: Registers: 695 942
+Process On CPU: Program 1, Instruction 82/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 695 942
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 225***********
+Ready Queue [Program 3, Instruction 74/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 432 34]
+ CPU: Registers: 660 82
+Process On CPU: Program 1, Instruction 83/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 660 82
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 226***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 83/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 660 82]
+ CPU: Registers: 374 602
+Process On CPU: Program 3, Instruction 75/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 374 602
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 227***********
+Ready Queue [Program 1, Instruction 83/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 660 82]
+ CPU: Registers: 232 623
+Process On CPU: Program 3, Instruction 76/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 232 623
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 228***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 76/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 232 623]
+ CPU: Registers: 782 555
+Process On CPU: Program 1, Instruction 84/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 782 555
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 229***********
+Ready Queue [Program 3, Instruction 76/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 232 623]
+ CPU: Registers: 548 460
+Process On CPU: Program 1, Instruction 85/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 548 460
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 230***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 85/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 548 460]
+ CPU: Registers: 379 847
+Process On CPU: Program 3, Instruction 77/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 379 847
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 231***********
+Ready Queue [Program 1, Instruction 85/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 548 460]
+ CPU: Registers: 97 473
+Process On CPU: Program 3, Instruction 78/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 97 473
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 232***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 78/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 97 473]
+ CPU: Registers: 789 641
+Process On CPU: Program 1, Instruction 86/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 789 641
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 233***********
+Ready Queue [Program 3, Instruction 78/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 97 473]
+ CPU: Registers: 175 833
+Process On CPU: Program 1, Instruction 87/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 175 833
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 234***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 87/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 175 833]
+ CPU: Registers: 984 466
+Process On CPU: Program 3, Instruction 79/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 984 466
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 235***********
+Ready Queue [Program 1, Instruction 87/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 175 833]
+ CPU: Registers: 720 467
+Process On CPU: Program 3, Instruction 80/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 720 467
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 236***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 80/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 720 467]
+ CPU: Registers: 594 37
+Process On CPU: Program 1, Instruction 88/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 594 37
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 237***********
+Ready Queue [Program 3, Instruction 80/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 720 467]
+ CPU: Registers: 801 747
+Process On CPU: Program 1, Instruction 89/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 801 747
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 238***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 89/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 801 747]
+ CPU: Registers: 910 188
+Process On CPU: Program 3, Instruction 81/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 910 188
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 239***********
+Ready Queue [Program 1, Instruction 89/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 801 747]
+ CPU: Registers: 697 77
+Process On CPU: Program 3, Instruction 82/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 697 77
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 240***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 82/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 697 77]
+ CPU: Registers: 525 220
+Process On CPU: Program 1, Instruction 90/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 525 220
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 241***********
+Ready Queue [Program 3, Instruction 82/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 697 77]
+ CPU: Registers: 42 973
+Process On CPU: Program 1, Instruction 91/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 42 973
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 242***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 91/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 42 973]
+ CPU: Registers: 412 610
+Process On CPU: Program 3, Instruction 83/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 412 610
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 243***********
+Ready Queue [Program 1, Instruction 91/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 42 973]
+ CPU: Registers: 149 805
+Process On CPU: Program 3, Instruction 84/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 149 805
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 244***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 84/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 149 805]
+ CPU: Registers: 792 824
+Process On CPU: Program 1, Instruction 92/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 792 824
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 245***********
+Ready Queue [Program 3, Instruction 84/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 149 805]
+ CPU: Registers: 810 388
+Process On CPU: Program 1, Instruction 93/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 810 388
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 246***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 93/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 810 388]
+ CPU: Registers: 878 528
+Process On CPU: Program 3, Instruction 85/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 878 528
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 247***********
+Ready Queue [Program 1, Instruction 93/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 810 388]
+ CPU: Registers: 429 895
+Process On CPU: Program 3, Instruction 86/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 429 895
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 248***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 86/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 429 895]
+ CPU: Registers: 39 652
+Process On CPU: Program 1, Instruction 94/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 39 652
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 249***********
+Ready Queue [Program 3, Instruction 86/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 429 895]
+ CPU: Registers: 643 583
+Process On CPU: Program 1, Instruction 95/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 643 583
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 250***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 95/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 643 583]
+ CPU: Registers: 737 696
+Process On CPU: Program 3, Instruction 87/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 737 696
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 251***********
+Ready Queue [Program 1, Instruction 95/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 643 583]
+ CPU: Registers: 52 64
+Process On CPU: Program 3, Instruction 88/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 52 64
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 252***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 88/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 52 64]
+ CPU: Registers: 305 525
+Process On CPU: Program 1, Instruction 96/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 305 525
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 253***********
+Ready Queue [Program 3, Instruction 88/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 52 64]
+ CPU: Registers: 483 177
+Process On CPU: Program 1, Instruction 97/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 483 177
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 254***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 97/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 483 177]
+ CPU: Registers: 843 914
+Process On CPU: Program 3, Instruction 89/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 843 914
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 255***********
+Ready Queue [Program 1, Instruction 97/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 483 177]
+ CPU: Registers: 768 940
+Process On CPU: Program 3, Instruction 90/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 768 940
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 256***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 90/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 768 940]
+ CPU: Registers: 972 601
+Process On CPU: Program 1, Instruction 98/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 972 601
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 257***********
+Ready Queue [Program 3, Instruction 90/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 768 940]
+ CPU: Registers: 590 91
+Process On CPU: Program 1, Instruction 99/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 590 91
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 258***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 99/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 590 91]
+ CPU: Registers: 943 723
+Process On CPU: Program 3, Instruction 91/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 943 723
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 259***********
+Ready Queue [Program 1, Instruction 99/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 590 91]
+ CPU: Registers: 968 493
+Process On CPU: Program 3, Instruction 92/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 968 493
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 260***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 3, Instruction 92/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 968 493]
+ CPU: Registers: 612 633
+Process On CPU: Program 1, Instruction 100/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 612 633
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 261***********
+Ready Queue [Program 3, Instruction 92/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 968 493]
+ CPU: Registers: 255 332
+Process On CPU: Program 1, Instruction 101/100, State "running", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 255 332
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 262***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue [Program 1, Instruction 101/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 255 332]
+ CPU: Registers: 719 424
+Process On CPU: Program 3, Instruction 93/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 719 424
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 263***********
+Ready Queue [Program 1, Instruction 101/100, State "ready", IO Requests: [5,1],[6,1],[17,1],[20,2], Registers 1/2 255 332]
+ CPU: Registers: 647 116
+Process On CPU: Program 3, Instruction 94/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 647 116
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 264***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+-------TERMINATING-----
+Ready Queue [Program 3, Instruction 94/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 647 116]
+ CPU: Registers: 180 960
+Process On CPU: null
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 265***********
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 727 131
+Process On CPU: Program 3, Instruction 95/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 727 131
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 266***********
+Ready Queue []
+ CPU: Registers: 0 609
+Process On CPU: Program 3, Instruction 96/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 0 609
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 267***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 503 279
+Process On CPU: Program 3, Instruction 97/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 503 279
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 268***********
+Ready Queue []
+ CPU: Registers: 882 635
+Process On CPU: Program 3, Instruction 98/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 882 635
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 269***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 524 488
+Process On CPU: Program 3, Instruction 99/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 524 488
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 270***********
+Ready Queue []
+ CPU: Registers: 369 600
+Process On CPU: Program 3, Instruction 100/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 369 600
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 271***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 375 628
+Process On CPU: Program 3, Instruction 101/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 375 628
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 272***********
+Ready Queue []
+ CPU: Registers: 911 816
+Process On CPU: Program 3, Instruction 102/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 911 816
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 273***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 668 928
+Process On CPU: Program 3, Instruction 103/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 668 928
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 274***********
+Ready Queue []
+ CPU: Registers: 987 193
+Process On CPU: Program 3, Instruction 104/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 987 193
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 275***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 941 466
+Process On CPU: Program 3, Instruction 105/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 941 466
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 276***********
+Ready Queue []
+ CPU: Registers: 964 25
+Process On CPU: Program 3, Instruction 106/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 964 25
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 277***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 574 904
+Process On CPU: Program 3, Instruction 107/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 574 904
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 278***********
+Ready Queue []
+ CPU: Registers: 209 130
+Process On CPU: Program 3, Instruction 108/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 209 130
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 279***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 348 524
+Process On CPU: Program 3, Instruction 109/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 348 524
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 280***********
+Ready Queue []
+ CPU: Registers: 206 200
+Process On CPU: Program 3, Instruction 110/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 206 200
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 281***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 607 799
+Process On CPU: Program 3, Instruction 111/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 607 799
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 282***********
+Ready Queue []
+ CPU: Registers: 841 194
+Process On CPU: Program 3, Instruction 112/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 841 194
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 283***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 39 590
+Process On CPU: Program 3, Instruction 113/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 39 590
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 284***********
+Ready Queue []
+ CPU: Registers: 363 858
+Process On CPU: Program 3, Instruction 114/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 363 858
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 285***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 538 398
+Process On CPU: Program 3, Instruction 115/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 538 398
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 286***********
+Ready Queue []
+ CPU: Registers: 794 115
+Process On CPU: Program 3, Instruction 116/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 794 115
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 287***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 715 288
+Process On CPU: Program 3, Instruction 117/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 715 288
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 288***********
+Ready Queue []
+ CPU: Registers: 74 958
+Process On CPU: Program 3, Instruction 118/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 74 958
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 289***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 359 528
+Process On CPU: Program 3, Instruction 119/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 359 528
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 290***********
+Ready Queue []
+ CPU: Registers: 283 329
+Process On CPU: Program 3, Instruction 120/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 283 329
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 291***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 32 784
+Process On CPU: Program 3, Instruction 121/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 32 784
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 292***********
+Ready Queue []
+ CPU: Registers: 902 477
+Process On CPU: Program 3, Instruction 122/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 902 477
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 293***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 116 908
+Process On CPU: Program 3, Instruction 123/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 116 908
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 294***********
+Ready Queue []
+ CPU: Registers: 130 730
+Process On CPU: Program 3, Instruction 124/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 130 730
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 295***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 640 482
+Process On CPU: Program 3, Instruction 125/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 640 482
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 296***********
+Ready Queue []
+ CPU: Registers: 83 945
+Process On CPU: Program 3, Instruction 126/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 83 945
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 297***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 318 840
+Process On CPU: Program 3, Instruction 127/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 318 840
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 298***********
+Ready Queue []
+ CPU: Registers: 434 797
+Process On CPU: Program 3, Instruction 128/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 434 797
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 299***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 174 465
+Process On CPU: Program 3, Instruction 129/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 174 465
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 300***********
+Ready Queue []
+ CPU: Registers: 479 751
+Process On CPU: Program 3, Instruction 130/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 479 751
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 301***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 617 109
+Process On CPU: Program 3, Instruction 131/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 617 109
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 302***********
+Ready Queue []
+ CPU: Registers: 787 597
+Process On CPU: Program 3, Instruction 132/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 787 597
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 303***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 656 404
+Process On CPU: Program 3, Instruction 133/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 656 404
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 304***********
+Ready Queue []
+ CPU: Registers: 186 983
+Process On CPU: Program 3, Instruction 134/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 186 983
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 305***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 963 111
+Process On CPU: Program 3, Instruction 135/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 963 111
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 306***********
+Ready Queue []
+ CPU: Registers: 141 789
+Process On CPU: Program 3, Instruction 136/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 141 789
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 307***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 14 44
+Process On CPU: Program 3, Instruction 137/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 14 44
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 308***********
+Ready Queue []
+ CPU: Registers: 206 632
+Process On CPU: Program 3, Instruction 138/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 206 632
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 309***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 869 300
+Process On CPU: Program 3, Instruction 139/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 869 300
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 310***********
+Ready Queue []
+ CPU: Registers: 316 572
+Process On CPU: Program 3, Instruction 140/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 316 572
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 311***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+-------MOVING TO IO-----
+Ready Queue []
+ CPU: Registers: 480 442
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 140/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 480 442
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 312***********
+Ready Queue []
+ CPU: Registers: 480 442
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 140/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 480 442
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 313***********
+Ready Queue []
+ CPU: Registers: 480 442
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 140/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 480 442
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 314***********
+Ready Queue []
+ CPU: Registers: 480 442
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 140/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 480 442
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 315***********
+Ready Queue []
+ CPU: Registers: 480 442
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 140/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 480 442
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 316***********
+Ready Queue [Program 3, Instruction 141/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 480 442]
+ CPU: Registers: 480 442
+Process On CPU: null
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 317***********
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 967 374
+Process On CPU: Program 3, Instruction 142/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 967 374
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 318***********
+Ready Queue []
+ CPU: Registers: 769 90
+Process On CPU: Program 3, Instruction 143/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 769 90
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 319***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 13 800
+Process On CPU: Program 3, Instruction 144/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 13 800
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 320***********
+Ready Queue []
+ CPU: Registers: 626 51
+Process On CPU: Program 3, Instruction 145/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 626 51
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 321***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+-------MOVING TO IO-----
+Ready Queue []
+ CPU: Registers: 227 598
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 145/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 227 598
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 322***********
+Ready Queue []
+ CPU: Registers: 227 598
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 145/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 227 598
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 323***********
+Ready Queue []
+ CPU: Registers: 227 598
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 145/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 227 598
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 324***********
+Ready Queue []
+ CPU: Registers: 227 598
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 145/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 227 598
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 325***********
+Ready Queue []
+ CPU: Registers: 227 598
+Process On CPU: null
+IO 1: Process On IO Program 3, Instruction 145/150, State "waiting", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 227 598
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 326***********
+Ready Queue [Program 3, Instruction 146/150, State "ready", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 227 598]
+ CPU: Registers: 227 598
+Process On CPU: null
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 327***********
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 668 171
+Process On CPU: Program 3, Instruction 147/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 668 171
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 328***********
+Ready Queue []
+ CPU: Registers: 431 892
+Process On CPU: Program 3, Instruction 148/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 431 892
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 329***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 123 517
+Process On CPU: Program 3, Instruction 149/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 123 517
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 330***********
+Ready Queue []
+ CPU: Registers: 562 238
+Process On CPU: Program 3, Instruction 150/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 562 238
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 331***********
+-------INTERRUPTING-----
+-------DISPATCHING-----
+Ready Queue []
+ CPU: Registers: 565 929
+Process On CPU: Program 3, Instruction 151/150, State "running", IO Requests: [14,1],[20,2],[21,2],[22,2],[23,2],[140,1],[145,1], Registers 1/2 565 929
+IO 1: Process On IO null
+Waiting Queue: []
+IO 2: Process On IO null
+Waiting Queue: []
+*******TIME STEP 332***********
 -------TERMINATING-----
 Ready Queue []
- CPU: Registers: 248 600
+ CPU: Registers: 59 27
 Process On CPU: null
 IO 1: Process On IO null
 Waiting Queue: []
